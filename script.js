@@ -1,19 +1,22 @@
-document.getElementById("orderForm").addEventListener("submit",function(e){
+function sendOrder(){
 
-e.preventDefault()
+let name=document.getElementById("name").value
+let phone=document.getElementById("phone").value
+let design=document.getElementById("design").value
 
-var name=document.getElementById("name").value
-var phone=document.getElementById("phone").value
-var type=document.getElementById("type").value
-var custom=document.getElementById("custom").value
+let message=`Hello D's Invitations,
 
-var message="New Invitation Order%0A"
+I want to order this design.
 
-message+="Name: "+name+"%0A"
-message+="Phone: "+phone+"%0A"
-message+="Card Type: "+type+"%0A"
-message+="Customization: "+custom
+Design: ${design}
 
-window.open("https://wa.me/916381928864?text="+message)
+Name: ${name}
+Phone: ${phone}
 
-})
+Please confirm availability.`
+
+let url=`https://wa.me/916381928864?text=${encodeURIComponent(message)}`
+
+window.open(url)
+
+}
