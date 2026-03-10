@@ -1,139 +1,53 @@
-body{
-
-margin:0;
-background:#0f0f0f;
-color:#f8f6f2;
-
-font-family:'Poppins',sans-serif;
-
-}
-
-header{
-
-display:flex;
-justify-content:space-between;
-padding:25px 80px;
-
-}
-
-.logo{
-
-font-family:'Playfair Display',serif;
-color:#d4af37;
-
-}
-
-nav a{
-
-margin-left:25px;
-text-decoration:none;
-color:#f8f6f2;
-transition:0.3s;
-
-}
-
-nav a:hover{
-
-color:#d4af37;
-
-}
-
-.hero{
-
-height:80vh;
+.design-grid{
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
-text-align:center;
-
+gap:20px;
+padding:60px;
 }
 
-.hero h2{
-
-font-family:'Playfair Display',serif;
-font-size:42px;
-max-width:600px;
-
+.card{
+width:260px;
+height:360px;
+perspective:1000px;
 }
 
-.cta{
+.card-inner{
+width:100%;
+height:100%;
+transition:transform 0.7s;
+transform-style:preserve-3d;
+}
 
-margin-top:20px;
-padding:12px 30px;
+.card:hover .card-inner{
+transform:rotateY(180deg);
+}
+
+.card-front,
+.card-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+}
+
+.card-back{
+transform:rotateY(180deg);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.order-btn{
 border:1px solid #d4af37;
-color:#d4af37;
+padding:10px 20px;
 text-decoration:none;
-transition:0.4s;
-
+color:#d4af37;
 }
 
-.cta:hover{
-
+.order-btn:hover{
 background:#d4af37;
 color:black;
-
-}
-
-.categories{
-
-padding:80px;
-text-align:center;
-
-}
-
-.cat-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-margin-top:40px;
-
-}
-
-.cat-card{
-
-padding:50px;
-border:1px solid #333;
-text-decoration:none;
-color:white;
-transition:0.4s;
-
-}
-
-.cat-card:hover{
-
-transform:translateY(-10px);
-border-color:#d4af37;
-
-}
-
-.trust{
-
-padding:80px;
-text-align:center;
-
-}
-
-.trust-grid{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-
-}
-
-.founder{
-
-padding:80px;
-text-align:center;
-
-}
-
-footer{
-
-padding:40px;
-text-align:center;
-background:#080808;
-
 }
