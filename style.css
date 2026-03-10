@@ -1,165 +1,139 @@
 body{
 
-font-family:Poppins;
-
-background:#F5F1EB;
-
 margin:0;
+background:#0f0f0f;
+color:#f8f6f2;
 
-text-align:center;
+font-family:'Poppins',sans-serif;
 
 }
 
 header{
 
-padding:80px 20px;
-
-background:#111;
-
-color:white;
+display:flex;
+justify-content:space-between;
+padding:25px 80px;
 
 }
 
-.tag{
+.logo{
 
-color:#C6A769;
+font-family:'Playfair Display',serif;
+color:#d4af37;
+
+}
+
+nav a{
+
+margin-left:25px;
+text-decoration:none;
+color:#f8f6f2;
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+.hero{
+
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+.hero h2{
+
+font-family:'Playfair Display',serif;
+font-size:42px;
+max-width:600px;
 
 }
 
 .cta{
 
-background:#C6A769;
+margin-top:20px;
+padding:12px 30px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+transition:0.4s;
 
-padding:15px 30px;
+}
 
+.cta:hover{
+
+background:#d4af37;
 color:black;
 
-text-decoration:none;
+}
 
-border-radius:8px;
+.categories{
+
+padding:80px;
+text-align:center;
 
 }
 
-.services{
-
-padding:50px;
-
-}
-
-.category-grid{
+.cat-grid{
 
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:30px;
+margin-top:40px;
+
+}
+
+.cat-card{
 
 padding:50px;
-
-}
-
-.category{
-
-background:white;
-
-padding:30px;
-
-border-radius:15px;
-
+border:1px solid #333;
 text-decoration:none;
-
-color:black;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
-
-transition:0.3s;
+color:white;
+transition:0.4s;
 
 }
 
-.category:hover{
+.cat-card:hover{
 
 transform:translateY(-10px);
+border-color:#d4af37;
 
 }
 
-.design-grid{
+.trust{
 
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:30px;
+padding:80px;
+text-align:center;
 
 }
 
-.card{
+.trust-grid{
 
-width:250px;
-
-height:350px;
-
-perspective:1000px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
 
 }
 
-.inner{
+.founder{
 
-position:relative;
-
-width:100%;
-
-height:100%;
-
-transition:transform 0.8s;
-
-transform-style:preserve-3d;
+padding:80px;
+text-align:center;
 
 }
 
-.card:hover .inner{
+footer{
 
-transform:rotateY(180deg);
-
-}
-
-.front,.back{
-
-position:absolute;
-
-width:100%;
-
-height:100%;
-
-backface-visibility:hidden;
-
-}
-
-.back{
-
-transform:rotateY(180deg);
-
-}
-
-img{
-
-width:100%;
-
-border-radius:10px;
-
-}
-
-.order-btn{
-
-background:#111;
-
-color:white;
-
-padding:10px 20px;
-
-border-radius:6px;
-
-text-decoration:none;
+padding:40px;
+text-align:center;
+background:#080808;
 
 }
