@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+
+<title>Place Order</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
 
@@ -9,33 +12,22 @@
 
 <body>
 
-<h2>Place Your Order</h2>
+<h2 class="gallery-title">Place Your Order</h2>
 
-<form id="orderForm">
+<div class="order-form">
 
-<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="name" placeholder="Your Name">
 
-<input type="text" id="phone" placeholder="Phone Number" required>
+<input type="text" id="phone" placeholder="Phone Number">
 
-<select id="type">
-
-<option>Single Page</option>
-
-<option>Double Page</option>
-
+<select id="design">
+<option>Marriage1</option>
+<option>Birthday1</option>
 </select>
 
-<select id="custom">
+<button onclick="sendOrder()">Place Order</button>
 
-<option>No Customization</option>
-
-<option>Need Customization</option>
-
-</select>
-
-<button type="submit">Place Order</button>
-
-</form>
+</div>
 
 <script src="script.js"></script>
 
