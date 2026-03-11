@@ -1,9 +1,9 @@
 .design-grid{
 display:flex;
-flex-direction:column;
-align-items:center;
-gap:20px;
-padding:60px;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+padding:60px 20px;
 }
 
 .card{
@@ -13,9 +13,10 @@ perspective:1000px;
 }
 
 .card-inner{
+position:relative;
 width:100%;
 height:100%;
-transition:transform 0.7s;
+transition:transform 0.7s ease;
 transform-style:preserve-3d;
 }
 
@@ -29,15 +30,23 @@ position:absolute;
 width:100%;
 height:100%;
 backface-visibility:hidden;
+border-radius:12px;
+overflow:hidden;
 }
 
 .card-back{
 transform:rotateY(180deg);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#0f0f0f;
 }
 
 .card img{
 width:100%;
-border-radius:10px;
+height:100%;
+object-fit:cover;
 }
 
 .order-btn{
@@ -45,6 +54,9 @@ border:1px solid #d4af37;
 padding:10px 20px;
 text-decoration:none;
 color:#d4af37;
+font-size:14px;
+letter-spacing:1px;
+transition:all 0.3s ease;
 }
 
 .order-btn:hover{
