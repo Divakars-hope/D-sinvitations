@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Place Order</title>
+<meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,24 +15,30 @@
 
 <body>
 
-<h2 class="gallery-title">Place Your Order</h2>
+<header>
 
-<div class="order-form">
+<h1>Order Invitation</h1>
 
-<input type="text" id="name" placeholder="Your Name">
+</header>
 
-<input type="text" id="phone" placeholder="Phone Number">
+<section class="order-form">
 
-<select id="design">
-<option>Marriage1</option>
-<option>Birthday1</option>
-</select>
+<form id="orderForm">
 
-<button onclick="sendOrder()">Place Order</button>
+<input type="text" placeholder="Your Name" required>
 
-</div>
+<input type="text" placeholder="Event Type" required>
+
+<textarea placeholder="Invitation Details"></textarea>
+
+<button type="submit">Send Order</button>
+
+</form>
+
+</section>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
