@@ -1,13 +1,21 @@
-document.getElementById("orderForm").addEventListener("submit", function(e){
+function filterSelection(category){
 
-e.preventDefault();
+let cards=document.getElementsByClassName("card");
 
-let message = "Hello I want to order invitation design";
+if(category=="all") category="";
 
-let phone = "916381928864";
+for(let i=0;i<cards.length;i++){
 
-let url = "https://wa.me/"+phone+"?text="+encodeURIComponent(message);
+cards[i].style.display="none";
 
-window.open(url);
+if(cards[i].className.indexOf(category)>-1){
 
-});
+cards[i].style.display="block";
+
+}
+
+}
+
+}
+
+filterSelection("all");
