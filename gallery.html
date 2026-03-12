@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | D's Invitations</title>
+<title>Gallery</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -19,76 +19,126 @@
 <h1>D's Invitations</h1>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="gallery.html">Gallery</a>
 <a href="order.html">Order</a>
 <a href="about.html">About</a>
+
 </nav>
 
 </header>
 
 
-<!-- WEDDING -->
-<section class="category">
+<div class="filter-buttons">
 
-<h2>Wedding Invitations</h2>
+<button onclick="filterSelection('all')">All</button>
+<button onclick="filterSelection('wedding')">Wedding</button>
+<button onclick="filterSelection('birthday')">Birthday</button>
+<button onclick="filterSelection('engagement')">Engagement</button>
+
+</div>
+
 
 <div class="design-grid">
 
-<div class="card">
+
+<div class="card wedding">
+
+<div class="card-inner">
+
+<div class="card-front">
 <img src="images/wedding1.jpg">
+</div>
+
+<div class="card-back">
+<h3>Wedding Invitation</h3>
 <a href="order.html" class="order-btn">Order</a>
 </div>
 
-<div class="card">
+</div>
+
+</div>
+
+
+<div class="card wedding">
+
+<div class="card-inner">
+
+<div class="card-front">
 <img src="images/wedding2.jpg">
+</div>
+
+<div class="card-back">
+<h3>Wedding Invitation</h3>
 <a href="order.html" class="order-btn">Order</a>
 </div>
 
 </div>
 
-</section>
+</div>
 
 
-<!-- BIRTHDAY -->
-<section class="category">
+<div class="card birthday">
 
-<h2>Birthday Invitations</h2>
+<div class="card-inner">
 
-<div class="design-grid">
-
-<div class="card">
+<div class="card-front">
 <img src="images/birthday1.jpg">
+</div>
+
+<div class="card-back">
+<h3>Birthday Invitation</h3>
 <a href="order.html" class="order-btn">Order</a>
 </div>
 
-<div class="card">
+</div>
+
+</div>
+
+
+<div class="card birthday">
+
+<div class="card-inner">
+
+<div class="card-front">
 <img src="images/birthday2.jpg">
+</div>
+
+<div class="card-back">
+<h3>Birthday Invitation</h3>
 <a href="order.html" class="order-btn">Order</a>
 </div>
 
 </div>
 
-</section>
+</div>
 
 
-<!-- ENGAGEMENT -->
+<div class="card engagement">
 
-<section class="category">
+<div class="card-inner">
 
-<h2>Engagement Invitations</h2>
-
-<div class="design-grid">
-
-<div class="card">
+<div class="card-front">
 <img src="images/engagement1.jpg">
+</div>
+
+<div class="card-back">
+<h3>Engagement Invitation</h3>
 <a href="order.html" class="order-btn">Order</a>
 </div>
 
 </div>
 
-</section>
+</div>
 
+
+</div>
+
+<script src="script.js"></script>
+
+<a href="https://wa.me/916381928864" class="whatsapp-float">💬</a>
 
 </body>
+
 </html>
