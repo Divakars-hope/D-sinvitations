@@ -1,22 +1,23 @@
 body{
 margin:0;
-font-family:'Poppins',sans-serif;
-background:#0e0e0e;
+font-family:Poppins;
+background:#0b0b0b;
 color:white;
 }
 
 header{
 display:flex;
 justify-content:space-between;
-padding:20px 60px;
 align-items:center;
+padding:20px 60px;
 background:black;
 }
 
 nav a{
 margin:0 15px;
-text-decoration:none;
 color:#d4af37;
+text-decoration:none;
+font-weight:500;
 }
 
 .hero{
@@ -31,65 +32,48 @@ color:#d4af37;
 text-decoration:none;
 }
 
-.btn:hover{
-background:#d4af37;
-color:black;
+.category{
+padding:50px;
+}
+
+.category h2{
+color:#d4af37;
+margin-bottom:30px;
 }
 
 .design-grid{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:40px;
-padding:60px;
+justify-content:center;
 }
 
 .card{
 width:260px;
-height:360px;
-perspective:1000px;
-}
-
-.card-inner{
-position:relative;
-width:100%;
-height:100%;
-transition:transform 0.7s;
-transform-style:preserve-3d;
-}
-
-.card:hover .card-inner{
-transform:rotateY(180deg);
-}
-
-.card-front,
-.card-back{
-position:absolute;
-width:100%;
-height:100%;
-backface-visibility:hidden;
-}
-
-.card-back{
-transform:rotateY(180deg);
 background:#111;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
+border-radius:10px;
+overflow:hidden;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 .card img{
 width:100%;
-height:100%;
+height:350px;
 object-fit:cover;
 }
 
 .order-btn{
-border:1px solid #d4af37;
+display:inline-block;
+margin:15px;
 padding:10px 20px;
-text-decoration:none;
+border:1px solid #d4af37;
 color:#d4af37;
+text-decoration:none;
 }
 
 .order-btn:hover{
