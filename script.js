@@ -1,22 +1,13 @@
-function sendOrder(){
+document.getElementById("orderForm").addEventListener("submit", function(e){
 
-let name=document.getElementById("name").value
-let phone=document.getElementById("phone").value
-let design=document.getElementById("design").value
+e.preventDefault();
 
-let message=`Hello D's Invitations,
+let message = "Hello I want to order invitation design";
 
-I want to order this design.
+let phone = "916381928864";
 
-Design: ${design}
+let url = "https://wa.me/"+phone+"?text="+encodeURIComponent(message);
 
-Name: ${name}
-Phone: ${phone}
+window.open(url);
 
-Please confirm availability.`
-
-let url=`https://wa.me/916381928864?text=${encodeURIComponent(message)}`
-
-window.open(url)
-
-}
+});
