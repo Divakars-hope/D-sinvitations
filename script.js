@@ -1,35 +1,43 @@
-/* SCROLL ANIMATION */
+const gallery = document.getElementById("gallery");
 
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
+if(gallery){
+
+const maxDesigns = 100;
+
+for(let i = 1; i <= maxDesigns; i++){
+
+let img = new Image();
+
+img.src = "images/design"+i+".jpg";
+
+img.onload = function(){
+
+let card = document.createElement("div");
+card.className = "card";
+
+let image = document.createElement("img");
+image.src = img.src;
+
+let orderBtn = document.createElement("a");
+
+let designURL = window.location.origin + "/images/design"+i+".jpg";
+
+orderBtn.href =
+"https://wa.me/916381928864?text=Hello I want to order this invitation design: "+designURL+"%0A%0ADescription:";
+
+orderBtn.target = "_blank";
+
+orderBtn.className = "order-btn";
+
+orderBtn.innerText = "Order on WhatsApp";
+
+card.appendChild(image);
+card.appendChild(orderBtn);
+
+gallery.appendChild(card);
+
 }
-});
-});
 
-document.querySelectorAll(".animate").forEach(el=>{
-observer.observe(el);
-});
-
-
-/* IMAGE PREVIEW */
-
-const modal=document.getElementById("previewModal");
-
-if(modal){
-
-const modalImg=document.getElementById("previewImg");
-
-document.querySelectorAll(".card img").forEach(img=>{
-img.onclick=function(){
-modal.style.display="block";
-modalImg.src=this.src;
-}
-});
-
-document.querySelector(".close").onclick=function(){
-modal.style.display="none";
 }
 
 }
