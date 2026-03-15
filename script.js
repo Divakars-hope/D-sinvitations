@@ -1,21 +1,35 @@
-function filterSelection(category){
+/* SCROLL ANIMATION */
 
-let cards=document.getElementsByClassName("card");
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
 
-if(category=="all") category="";
+document.querySelectorAll(".animate").forEach(el=>{
+observer.observe(el);
+});
 
-for(let i=0;i<cards.length;i++){
 
-cards[i].style.display="none";
+/* IMAGE PREVIEW */
 
-if(cards[i].className.indexOf(category)>-1){
+const modal=document.getElementById("previewModal");
 
-cards[i].style.display="block";
+if(modal){
 
+const modalImg=document.getElementById("previewImg");
+
+document.querySelectorAll(".card img").forEach(img=>{
+img.onclick=function(){
+modal.style.display="block";
+modalImg.src=this.src;
+}
+});
+
+document.querySelector(".close").onclick=function(){
+modal.style.display="none";
 }
 
 }
-
-}
-
-filterSelection("all");
