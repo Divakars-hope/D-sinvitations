@@ -4,9 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Order Invitation</title>
+<title>Gallery</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,27 +16,71 @@
 
 <header>
 
-<h1>Order Invitation</h1>
+<div class="logo-container">
+
+<img src="images/logo.png" class="logo">
+
+<div>
+<h1>D's Invitations</h1>
+<p class="tagline">Elegance in Every Pixel</p>
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="order.html">Order</a>
+<a href="about.html">About</a>
+
+</nav>
 
 </header>
 
-<section class="order-form">
 
-<form>
+<div class="design-grid">
 
-<input type="text" placeholder="Your Name" required>
+<div class="card animate">
+<img src="images/design1.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
+</div>
 
-<input type="text" placeholder="Event Type" required>
+<div class="card animate">
+<img src="images/design2.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
+</div>
 
-<textarea placeholder="Invitation Details"></textarea>
+<div class="card animate">
+<img src="images/design3.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
+</div>
 
-<button type="submit">Send Order</button>
+<div class="card animate">
+<img src="images/design4.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
+</div>
 
-</form>
+<div class="card animate">
+<img src="images/design5.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
+</div>
 
-</section>
+</div>
+
+
+<div id="previewModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-content" id="previewImg">
+
+</div>
+
 
 <a href="https://wa.me/916381928864" class="whatsapp-float">💬</a>
+
+<script src="script.js"></script>
 
 </body>
 
