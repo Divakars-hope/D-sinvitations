@@ -4,13 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>D's Invitations</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,21 +16,36 @@
 
 <header>
 
-<div class="logo">
-<img src="images/logo.png">
+<div class="logo-container">
+
+<img src="images/logo.png" class="logo">
+
+<div>
 <h1>D's Invitations</h1>
+<p class="tagline">Elegance in Every Pixel</p>
+</div>
+
 </div>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="gallery.html">Gallery</a>
 <a href="order.html">Order</a>
 <a href="about.html">About</a>
+
 </nav>
 
 </header>
 
+
 <section class="hero">
+
+<video autoplay muted loop class="hero-video">
+<source src="video/wedding.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
 
 <h2>Luxury Wedding Invitations</h2>
 
@@ -40,15 +53,37 @@
 
 <a href="gallery.html" class="btn">View Designs</a>
 
+</div>
+
 </section>
 
-<footer>
 
-<p>© 2026 D's Invitations</p>
+<section class="testimonials animate">
 
-</footer>
+<h2>What Our Clients Say</h2>
+
+<div class="testimonial">
+
+<p>"Beautiful invitation designs and very professional service."</p>
+
+<h4>— Priya & Arjun</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>"Elegant and modern invitations. Highly recommended."</p>
+
+<h4>— Rahul</h4>
+
+</div>
+
+</section>
+
 
 <a href="https://wa.me/916381928864" class="whatsapp-float">💬</a>
+
+<script src="script.js"></script>
 
 </body>
 
