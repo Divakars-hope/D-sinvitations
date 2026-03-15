@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Gallery</title>
 
@@ -16,7 +16,16 @@
 
 <header>
 
+<div class="logo-container">
+
+<img src="images/logo.png" class="logo">
+
+<div>
 <h1>D's Invitations</h1>
+<p class="tagline">Elegance in Every Pixel</p>
+</div>
+
+</div>
 
 <nav>
 
@@ -30,114 +39,48 @@
 </header>
 
 
-<div class="filter-buttons">
-
-<button onclick="filterSelection('all')">All</button>
-<button onclick="filterSelection('wedding')">Wedding</button>
-<button onclick="filterSelection('birthday')">Birthday</button>
-<button onclick="filterSelection('engagement')">Engagement</button>
-
-</div>
-
-
 <div class="design-grid">
 
-
-<div class="card wedding">
-
-<div class="card-inner">
-
-<div class="card-front">
-<img src="images/wedding1.jpg">
+<div class="card animate">
+<img src="images/design1.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
 </div>
 
-<div class="card-back">
-<h3>Wedding Invitation</h3>
-<a href="order.html" class="order-btn">Order</a>
+<div class="card animate">
+<img src="images/design2.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
 </div>
 
+<div class="card animate">
+<img src="images/design3.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
 </div>
 
+<div class="card animate">
+<img src="images/design4.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
 </div>
 
-
-<div class="card wedding">
-
-<div class="card-inner">
-
-<div class="card-front">
-<img src="images/wedding2.jpg">
-</div>
-
-<div class="card-back">
-<h3>Wedding Invitation</h3>
-<a href="order.html" class="order-btn">Order</a>
-</div>
-
+<div class="card animate">
+<img src="images/design5.jpg">
+<a class="order-btn" href="https://wa.me/916381928864?text=I want this invitation design">Order</a>
 </div>
 
 </div>
 
 
-<div class="card birthday">
+<div id="previewModal" class="modal">
 
-<div class="card-inner">
+<span class="close">&times;</span>
 
-<div class="card-front">
-<img src="images/birthday1.jpg">
-</div>
-
-<div class="card-back">
-<h3>Birthday Invitation</h3>
-<a href="order.html" class="order-btn">Order</a>
-</div>
+<img class="modal-content" id="previewImg">
 
 </div>
 
-</div>
-
-
-<div class="card birthday">
-
-<div class="card-inner">
-
-<div class="card-front">
-<img src="images/birthday2.jpg">
-</div>
-
-<div class="card-back">
-<h3>Birthday Invitation</h3>
-<a href="order.html" class="order-btn">Order</a>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="card engagement">
-
-<div class="card-inner">
-
-<div class="card-front">
-<img src="images/engagement1.jpg">
-</div>
-
-<div class="card-back">
-<h3>Engagement Invitation</h3>
-<a href="order.html" class="order-btn">Order</a>
-</div>
-
-</div>
-
-</div>
-
-
-</div>
-
-<script src="script.js"></script>
 
 <a href="https://wa.me/916381928864" class="whatsapp-float">💬</a>
+
+<script src="script.js"></script>
 
 </body>
 
